@@ -1,0 +1,268 @@
+/* .questions {
+    display: flex;
+    background-color: bisque;
+} */
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: block; 
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0px 3px 16px rgba(46, 163, 16, 0.08);
+  
+}
+
+.logo {
+  min-width: 125px;
+  max-height: 24px;
+  position: absolute; 
+  display: block; 
+  margin-top: 18px;   
+  margin-left: 45%; 
+ 
+}
+
+body {
+  background: #F3F7F2;
+  font-family: Lato;
+  
+}
+
+.btn {
+  background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F0 100%);
+  border: 1px solid #E4F0E1;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  cursor: pointer;
+  margin-right:24px;
+  margin-top:14px;
+  float:right;
+  font-family: Lato, sans-serif;
+  
+  }
+  
+  .icon {
+    padding: 0px 8px 0px 8px;
+  }
+
+  .text {
+     padding-right: 8px;
+  }
+  .btn:hover {
+    color: #55A341;
+  }
+  
+  .btn:hover path {
+     fill: #55A341; 
+  }
+  
+  .form-body {
+    min-width: 400px;
+    width: 45%;
+    height: 100%;
+    background-color:yellow;
+    background: #FFFFFF;
+    border: 1px solid #E4F0E1;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    margin: auto;
+    margin-top: 32px;
+    font-family: Lato, sans-serif;
+    color: #3B3D3B;
+    font-style: normal;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+ 
+  }
+
+  h1 {
+  
+    width: 100%;
+    height: 24px;
+    margin: 24px 0px 24px 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #434742;
+
+  }
+
+  #description {
+    margin: 16px 0px 0px 24px; 
+    font-family: Lato, sans-serif; 
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* or 22px */
+    color: #434742;
+    width: 55%;
+
+  }
+
+  #survey-form {
+    margin-top: 24px;
+    /* background-color: yellow; */
+  }
+  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #D6E0D3;
+    padding-left: 18px; 
+  }
+
+  input {
+    padding: 8px;
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    background: #E4F0E1;
+    border: none;
+  }
+.questions {
+  margin-bottom: 24px;
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+}
+
+#name, #email, #number, #dropdown{
+  width: 250px;
+  height: 32px; 
+  background: #FFFFFF;
+  border: 1px solid #E4F0E1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+#comments {
+  width: 300px;
+  min-height: 100px; 
+  background: #FFFFFF;
+  border: 1px solid #E4F0E1;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-top: 8px; 
+  padding-left: 8px;
+  padding-top: 8px; 
+}
+
+
+
+#dropdown option {
+  width: 16px;
+  height: 16px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F1F5F0 100%);
+  border: 1px solid #E4F0E1;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.radio {
+  list-style: none;
+  margin-top: 8px;
+ 
+}
+.questions li label {
+  margin-left: 8px;
+}
+
+footer {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+   
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+   cursor: pointer;
+   background: #3B3D3B;
+}
+
+.btn-bg {
+  width: 100%;
+  height: 79px;
+  left: 385px;
+  top: 1093px;
+  background: #F4FAF2;
+  border-radius: 0px 0px 3px 3px;
+}
+
+#submit {
+margin: 24px 24px 24px 24px;
+width: 60px;
+height: 32px;
+background: #51B638;
+box-shadow: 0px 4px 6px rgba(85, 163, 65, 0.48);
+border-radius: 4px;
+font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+color: #FFFFFF;
+border: none;
+cursor: pointer;
+}
+
+#cancel {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  /* identical to box height */
+  color: #666B65;
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+#cancel:hover {
+  color: #51B638;
+
+
+}
+
+#submit:hover {
+  background-color: #54D633;
+
+}
+
+footer {
+  font-family: Lato;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #3B3D3B;
+}
+
+#portfolio{
+  color: #51B638;
+  text-decoration: none;
+}

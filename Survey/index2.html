@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--Navigation-bar-->
+    <header>
+        <img class="logo" src="images/logo.png" alt="FCC Survey">
+        <!-- <div class="github-rating">github-rating</div> -->
+        <button class="btn"><span class="icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.99993 15L5.10172 17.5751L6.0372 12.1209L2.07446 8.25819L7.55083 7.46243L9.99993 2.5L12.449 7.46243L17.9254 8.25819L13.9627 12.1209L14.8981 17.5751L9.99993 15Z" fill="#576B51"/>
+                </svg> </span>
+                  <span class="text">Star</span>
+                </button>
+        </header>
+
+    <!--Form-body-->
+    <section class="form-body">
+        <!--Title-->
+        <h1 id="title">Developer Survey</h1>
+        <hr>
+        <!--Description--> 
+        <p id="description">Answer to all the questions are required unless labelled 
+            optional</p>
+
+        <form id="survey-form">
+        <!--Questions-->
+        <div class="questions">
+                <label id="name-label">What is your name?</label>
+                <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+
+        <div class="questions">
+                <label id="email-label">What is your email?</label>
+                <input autofocus type="email" name="email" id="email" class="input-field" placeholder="Enter your email" required>
+        </div>
+
+        <div class="questions">
+                <label id="number-label">What is your age?</label>
+                <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="age">
+        </div>
+
+        <div class="questions">
+                <label for="role">Which option best describes your 
+                        current role?</label>
+                <select id="dropdown">
+                <option  value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+                </select>
+            
+                        
+        </div>
+
+        <div class="questions">
+                <label for="role">How much work experience you have?</label>
+                <ul class="container">
+                 <li class="radio"> <input name="radio-buttons" value="1"  type="radio" ><label for="0-1 year">0-1 year</label></li>
+                 <li class="radio"> <input name="radio-buttons" value="2"type="radio"   ><label for="male">Male</label></li>
+                 <li class="radio"> <input name="radio-buttons" value="3" type="radio"   ><label for="male">Male</label></li>
+                 <li class="radio"> <input name="radio-buttons" value="4" type="radio"   ><label for="male">Male</label></li>
+                </ul>
+               
+        </div>
+
+        <div class="questions">
+                <label for="role">Which programming languages do you know?</label>
+                <ul style="list-style: none;">
+                <li class="radio"> <input value="1" type="checkbox"  name="programming" ><label for="C++">C++</label></li>
+                <li class="radio"> <input value="2" type="checkbox"  name="experience" ><label for="Javascript">Male</label></li>
+                <li class="radio"> <input value="3" type="checkbox"  name="experience" ><label for="Python">Male</label></li>
+                <li class="radio"> <input value="4" type="checkbox"  name="experience" ><label for="Ruby">Male</label></li>
+                </ul>
+                   
+            </div>
+
+        <div class="questions">
+                <label for="role">Any comment or suggestions?</label>
+                <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+        
+        </div>
+        <hr>
+        <!--Buttons-->
+        <div class="btn-bg">
+                <button id="submit" type="submit">Submit</button>
+                <button id="cancel" type="submit">Cancel</button>
+         </div> 
+        </form>
+      
+    </section>
+    <footer><p>Designed & Developed by <a id="portfolio" href="http://zunaidaslam.com">Zunaid Aslam</a></p> </footer>
+
+    
+      
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>       
+</body>
+</html>
