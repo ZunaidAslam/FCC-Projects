@@ -1,0 +1,19 @@
+<div id="root"></div>
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.js" crossorigin></script>
+
+<script type="text/babel">
+
+const rootElement = document.getElementById('root')
+// console.log(rootElement)
+// const element = document.createElement('div')
+// element.textContent = "Hello World"
+// element.className = 'container'
+// rootElement.appendChild(element)
+// const element = React.createElement('div', {className:'container'}, "Hello World", "Goodbye World")
+const content = "Again"
+const element = <div className="container"> Hello World  {content}</div>
+ReactDOM.render(element, rootElement)
+console.log(element)
+</script>
