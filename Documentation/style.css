@@ -70,13 +70,13 @@ ul{
       line-height: 16px;
       color: #2d2d2d;
   }
-  #navigation{
+  #navbar{
       max-width: 300px;
       background-color: #F2F2F2;
 
   }
 
-  #doc{
+  #main-doc{
     max-width: 500px;
 
   }
@@ -86,7 +86,7 @@ ul{
       -webkit-flex-direction: column;
       flex-direction: column;
     }
-    #navigation{
+    #navbar{
         max-width: 100%;
         background-color: #F2F2F2;
     }
