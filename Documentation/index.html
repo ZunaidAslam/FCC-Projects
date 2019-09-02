@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Documentation</title>
+</head>
+<body class="row">
+    <nav class="column" id="navigation">
+        <header class="contnent-header">Slack API Extract</header>
+        <ul>
+            <li><a href="#overview" class="nav-link">Overview</a></li>
+            <li><a href="#planning" class="nav-link">Planning interaction</a></li>
+            <li><a href="#choosing" class="nav-link">Choosing the right APIs</a></li>
+            <li><a href="#communicating" class="nav-link">Communicating with users</a></li>
+            <li><a href="#interaction" class="nav-link">Interaction guidelines for Slack apps</a></li>
+        </ul>
+    </nav>
+    <main class="column" id="doc">
+        <section class="" id="overview">
+            <header class="title">Overview</header>
+            <article>
+                <p class="info">
+                    When you set out to make a Slack app, the range of possibilities can make you feel like you've stepped into Wonka's Chocolate Factory. If you're bewildered at the options in front of you, use this guide to choose from the delicious treats of the Slack platform.
+
+While this guide presents a framework for planning a Slack app, it's by no means the only way. If you've chosen a course already, stay resolute. For the wandering, wondering remainder, this guide is for you.
+
+Outline your use cases
+Storyboard your interactions
+Understand your audience
+Put it all together
+
+Now is the time to figure out how your app will help make other people’s working lives simpler, more pleasant, and more productive.
+
+In order to decide which workflows make sense to hook into Slack, it’s helpful to know what you can do with our APIs. Read our introduction to Slack apps for a rundown of the capabilities available.
+
+Gather feedback and surveys from a diverse range of people within your organization. We don't prescribe the feedback or ideas to seek, but here are some thought experiments to try:
+
+Are there any regular types of message that are posted manually? Imagine a manager posting in a channel every Friday afternoon asking for status reports. This could be turned into an app that posts reminders on the same schedule. The app could also collect the responses in a better format for the manager to consume later.
+Ask team members to find one or two automated messages that they’ve received in the past week or so that are critical to their job. Often these kinds of automated emails can be turned into messages posted in workspaces by Slack apps.
+Think beyond pure communication and embrace interactivity—an app like the above might just posted automated messages, but it could also include interactive components that allow users to take action right from Slack.
+Think about the key hurdles that people face when using Slack in your team, and outline them. Can an app solve those problems?
+Do you regularly use an external service while working? If they don't already have their own integration (try the App Directory), and they offer a web-based API, build an app that integrates that service into Slack.
+If you need some inspiration, you can always peruse the Slack App Directory or take a look at the Slack Platform Ideaboard.
+                    
+                    
+            </article>
+        </section>
+
+        <section class="" id="planning">
+            <header class="title">Planning interaction</header>
+            <article>
+                <p class="info">
+                    No super hero is complete without an origin story. Similarly, no app is complete (or can even begin) without a clear sense of when, how, and why users will interact with the app.
+
+In our overview of plotting out your app, we mentioned some tips to help you get started. Put yourself in a user’s shoes. Imagine them trying to complete a specific task using your app. How do they make first contact?
+
+Here, we'll break down the task of triggering interaction.
+
+We'll talk about the different origins your app might take as inspiration before springing forth into action-packed, technicolor communication. Also, we'll give a brief overview of the moves and grooves available to your app once a flow has been kicked off.
+
+Flow overview
+Origins for interaction
+Interaction types
+Flow overview (flowverview, for short)
+No app is an island. Your app acts as a small archipelago in a long chain of events that lead up to (and beyond) the moment when user and app interact.
+
+Keep the distant end-goal in sight like a guiding horizon: a user wants to accomplish something with your app. The rest is simply getting there as productively and pleasantly as possible.
+
+User interaction has four basic parts: an origin event, a user interaction, an HTTP request from Slack summarizing that interaction, and a response by the original service.
+
+We'll focus on the first two parts, the origin and interaction, in this getting started guide. Those are what you need to figure out first, before implementation can even begin.
+
+Here's a bit more of an explanation on these two elements of the interactive flow:
+
+Origin: an originating event causes your app to send a message that invites an action (like clicking a button or selecting a date) in Slack.
+
+Interaction: A user in Slack reacts to the message by clicking that button or selecting that date.
+
+Read on for a study of the archetypal origins, and interaction types, available to apps.
+                    
+                    
+            </article>
+        </section>
+
+        <section class="" id="choosing">
+            <header class="title">Choosing the right APIs
+            </header>
+            <article>
+                <p class="info">
+                    The Slack platform is composed of several APIs that let you build apps of all shapes and sizes. Generally, these APIs work together but there’s also a bit of overlap that can sometimes be confusing. This section will help you find the right API for your project.
+
+The RTM API
+The Real Time Messaging (RTM) API is one of the most basic ways of connecting another application to Slack. Your app connects to Slack’s infrastructure via a websocket, which creates an always-on connection to Slack.
+
+All activity that happens in your workspace — every message in a public channel, every new channel created, every emoji reaction — is pushed through this channel. The traffic can be overwhelming, especially as your team grows, and maintaining those websocket connections can get onerous. For these reasons, we often recommend using other APIs for building your app.
+                    
+            </article>
+        </section>
+
+        <section class="" id="communicating">
+            <header class="title">Communicating with users</header>
+            <article>
+                <p class="info">
+                    The message is at the core of how you communicate in Slack and apps also use messages to interact with your team members.
+
+Messages don’t have to be just simple text notifications, though. They can include rich formatting and even complex user interfaces. To create these types of messages, you’ll use a UI framework we call Block Kit. These powerful building blocks for messages allow you to build complete workflows right inside Slack, that work just as well on our mobile devices as they do on your desktop, without any additional code or configuration.
+                    
+            </article>
+        </section>
+
+        <section class="" id="interaction">
+            <header class="title">Interaction guidelines</header>
+            <article>
+                <p class="info">
+                    Being considerate with messaging
+Messages that alert users can be incredibly useful. Many Slack apps exist primarily to pipe notifications from external services into relevant channels. Here are some Slack-specific considerations that can help ensure the messages your users want don’t turn into noise.
+
+Be upfront during onboarding
+When your app is first installed, allow the installer to easily set messaging preferences. Think about settings like the rate of messages, the channel they should be posted to, and if applicable, the type(s) of messages your app should post.
+                    
+            </article>
+        </section>
+       
+    </main>
+</body>
+</html>
